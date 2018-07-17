@@ -1,0 +1,584 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,900,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto" );
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 300px;
+}
+
+a:hover, a:focus {
+  color: #66a3ff;
+  text-decoration: none;
+}
+
+:root {
+  font-size: calc(1vw + 1vh + .5vmin);
+}
+
+html{
+    height: auto;
+    width: min-content;
+	min-width: 98%;
+    margin: 0 auto;
+ 
+
+}
+
+body {
+  color: white;
+  background-color: black;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", sans-serif;
+ 
+	height: 100;
+	width:100%;
+overflow-x: hidden;
+}
+
+header {
+  background-color: black;
+  height: 100vh;
+  position: relative;
+}
+
+.titanic {
+  font-size: 16em;
+  font-weight: 200;
+font-family: 'Archivo Black', sans-serif;
+
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: grey;
+}
+
+nav {
+  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.inner {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  transition: -webkit-transform 0.5s cubic-bezier(0.55, 0.07, 1, 0.02);
+  transition: transform 0.5s cubic-bezier(0.55, 0.07, 1, 0.02);
+  transition: transform 0.5s cubic-bezier(0.55, 0.07, 1, 0.02), -webkit-transform 0.5s cubic-bezier(0.55, 0.07, 1, 0.02);
+}
+.inner.open {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.fa-times {
+  position: absolute;
+  top: 35px;
+  right: 10%;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.fa-bars {
+  font-size: 36px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  cursor: pointer;
+  color:grey;
+}
+
+.outer {
+  overflow: hidden;
+  position: relative;
+  color:grey;
+}
+
+.container2{
+  height: 20vh;
+    width: 22vw;
+    position: relative;
+    left: -8vw;
+    border: none;
+    padding: 10px;
+
+}
+.container3{
+  height: 20vh;
+    width: 22vw;
+    position: relative;
+    top: 20vh;
+    left: -8vw;
+    border: none;
+    padding: 10px;
+}
+
+.bho{
+
+  position: absolute;
+   left: 83%;
+
+}
+
+
+
+.underline {
+  height: 2px;
+  width: 0;
+  margin: 0 auto;
+  background-color: white;
+
+
+}
+
+.nav-link {
+  font-size: 2em;
+  letter-spacing: 1px;
+  display: block;
+  color: grey;
+font-family: 'Archivo Black', sans-serif;
+  padding: 5px 0;
+  margin: 25px 0;
+}
+
+.elenco {
+  font-size: 30px;
+  letter-spacing: 1px;
+  display: block;
+  color: blue;
+  font-family: "Montserrat";
+  padding: 15px;
+  margin: 30px;
+}
+
+main {
+
+ /* height:100vh; */
+  background-color: grey;
+  text-align: left;
+  font-size: 3em;
+  padding-bottom:4%;
+  padding-top:0.5%;
+}
+
+#intro {
+color: black;
+text-align: left;
+
+font-family: "Montserrat";
+font-size: 110px;
+font:500;
+padding: 5px 0;
+
+
+}
+
+.skills-sec {
+  height:90vh;
+  position: relative;
+  background-color: #fff;
+  padding-top: 1.8%;
+  display: block;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  margin: 30px;
+  font-size: 100px;
+  font-weight: 700;
+  font-family: 'Archivo Black', sans-serif;
+  padding: 20px 0;
+
+}
+
+h2 {
+  color: Black;
+  text-align: center;
+  margin: 30px;
+  font-size: 4em;
+  font-weight: 700;
+font-family: 'Archivo Black', sans-serif;
+  border-top: 10px solid #333;
+  border-bottom: 10px solid #333;
+  border-top-width: 10px;
+  padding: 20px 0;
+}
+
+p {
+  color:black;
+  text-align: left;
+  margin: 30px ;
+font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+
+p2 {
+  color:Black;
+  text-align: left;
+  margin: 30px ;
+font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
+  font-weight: 500;
+  padding: 5px ;
+
+
+
+}
+p1 {
+  color: black;
+position: relative;
+  font-family: "Archivo Black";
+  font-size: 2vh;
+  font-weight: 500;
+
+}
+
+.copyright {
+  color: blue;
+  text-align: center;
+  margin: 30px 0;
+  font-family: "Montserrat";
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.portfolio-sec {
+  background-color: black;
+  padding-bottom: 0;
+}
+.portfolio-sec h2 {
+  color: #fff;
+  border-color: #fff;
+  margin-top: 50px;
+}
+
+#portfolio {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#miafaccia {
+  position: relative;
+  transform: scale(1); /* Equal to scaleX(0.7) scaleY(0.7) */
+  top:90%; left:0%;
+  padding-top: 200px;
+	max-height: 20vh;
+	max-resolution: 20vw;
+
+}
+
+  #miafaccia1{
+    position: relative;
+    transform: scale(1); /* Equal to scaleX(0.7) scaleY(0.7) */
+    top:90%; left:3%;
+    padding-top: 200px;
+  width:955px;
+
+
+
+}
+
+#miafaccia2{
+  position: relative;
+  transform: scale(1); /* Equal to scaleX(0.7) scaleY(0.7) */
+  top:90%; left:6.2%;
+  padding-top: 200px;
+width:955px;
+
+
+
+}
+
+#miafaccia3{
+  position: relative;
+  transform: scale(1); /* Equal to scaleX(0.7) scaleY(0.7) */
+  top:90%; left:10%;
+  padding-top: 200px;
+width:955px;
+
+
+
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  opacity: 0;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 15px;
+  transition: all .3s ease-in;
+  background-color: black;
+}
+
+.project img {
+  display: inline-block;
+}
+
+footer {
+  color: #333;
+  background-color: #fff;
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 0px;
+
+}
+footer h2 {
+  margin: 50px 0 50px 0;
+}
+footer #contacts {
+  margin-bottom: 20px;
+}
+footer .contact-link {
+  display: block;
+  border: 1px solid #333;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 150%;
+  color: #333;
+  text-transform: uppercase;
+  transition: all .25s ease-in-out;
+}
+footer .contact-link:hover {
+  color: white;
+  background-color: black;
+
+}
+
+.awesome {
+  border-color: blue;
+  color: blue;
+  background-image: radial-gradient(90deg, blue 50%, #99ccff 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 500ms ease-in-out;
+}
+.awesome:hover {
+  background-position: 0;
+}
+
+@media screen and (max-width: 1210px) {
+  .contact-link {
+    margin: 5px auto;
+  }
+
+  #intro {
+    width: 100%;
+
+    background-color: blue;
+  }
+  .titanic {
+	  
+	font-size: 10em;
+    font-family: 'Archivo Black', sans-serif;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: grey;
+
+  }
+}
+@media screen and (max-width: 768px) {
+  .skill {
+    width: 100%;
+    height: 30vw;
+  }
+
+  .project {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-link {
+    width: 100%;
+    margin: 15px auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skill {
+    width: 100%;
+    height: 60vw;
+  }
+
+  .project {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-link {
+    width: 70%;
+    margin: 15px auto;
+  }
+}
+
+
+ 
+/* MODAL IMMAGINI */
+
+ 
+#myface {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+	margin: 10px;
+}
+
+#myface:hover {opacity: 0.7;}
+
+#myface1 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+	margin: 10px;
+}
+
+#myface1:hover {opacity: 0.7;}
+
+#myface2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+	margin: 10px;
+}
+
+#myface2:hover {opacity: 0.7;}
+
+#myface3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+	margin: 10px;
+}
+
+#myface3:hover {opacity: 0.7;}
+
+
+.miafaccia{
+	 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+	margin: 10px;
+
+}
+.miafaccia:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 70%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #EBEBEB;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+	opacity: 1;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/*FADEIN ON SCROLL PAGE */
+
+.star {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 1.2s;
+    animation: animat_show 1.2s;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
